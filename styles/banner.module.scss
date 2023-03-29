@@ -1,0 +1,117 @@
+.hero {
+    background-color: #fff; /**#013047;**/
+    display: block;
+    position: relative;
+    height: 680px;
+    font-family: Montserrat;
+    
+    @media screen and (min-width: 576px) {
+        height: 600px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 800px;
+    }
+
+    .banner {
+        h1, h2, h3, h4, h5, h6 { 
+            color: rgb(26, 26, 26); 
+            font-family: 'Montserrat';
+        }
+
+        h1 {
+            margin-top: 16px;
+        }
+    
+        h3 {
+            max-width: 40rem;
+            margin: 16px auto;
+            text-transform: none;
+            line-height: 2.1rem;
+            font-family: 'MontserratLight';
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 90vw;
+            height: auto;
+        }
+        @media screen and (min-width: 992px) {
+            width: 70vw;
+            height: auto;
+        }
+    
+        z-index: 50;
+    
+        .getStarted {
+            margin-top: 24px;
+            align-self: center;
+        }
+
+        button {
+            font-size: 1rem;
+            padding: 0.35rem 1.25rem;
+            display: inline-flex;
+            align-items: center;
+
+            i {
+                font-size: 1.5rem;
+                padding-left: 0rem;
+                padding-right: .5rem;
+            }
+        }
+    }
+}
+
+#background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    opacity: 0.7;
+}
+  
+.hydraeniumLogo {
+    width:0vw;
+    height:0vh;
+    align-self: center;
+    font-family: BookmanOldStyle, "Bookman Old Style" !important;
+    font-weight: 100;
+
+    @media screen and (min-width: 768px) {
+        width: 50vw;
+        height: auto;
+    }
+    @media screen and (min-width: 992px) {
+        width: 50vw;
+        height: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 40vw;
+        height: auto;
+    }
+}
+
+.hydraeniumIcon {
+    width:30vw;
+    height: auto;
+    align-self: center;
+    font-family: BookmanOldStyle, "Bookman Old Style" !important;
+    font-weight: 100;
+
+    @media screen and (min-width: 320px) {
+        width: 40vw;
+        height: auto;
+    }
+
+    @media screen and (min-width: 576px) {
+        width: 25vw;
+        height: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 0vw;
+        height: 0vh;
+    }
+}
