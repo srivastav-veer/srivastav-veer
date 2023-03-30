@@ -1,0 +1,110 @@
+#banner {
+  height: 100vh;
+  background: #3A1078;
+  overflow: hidden;
+}
+
+#banner > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner .wrapper {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+#banner .hello {
+  font-size: 50px;
+  font-family: LeagueSpartan;
+  color: #3A1078;
+  margin-bottom: 0;
+  line-height: 60px;
+  margin-right: 20px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+}
+
+#banner .name {
+  font-family: Guaraldo;
+  color: #ffffff;
+  font-size: 82px;
+}
+
+#banner ul {
+  list-style: none;
+  padding-left: 0;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+  margin-top: -25px;
+}
+
+#banner ul li {
+  font-size: 64px;
+  color: #ffa000;
+  font-family: LeagueSpartan;
+  position: relative;
+  top: 0;
+  animation: slide 25s steps(5) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -450px;
+  }
+}
+
+#banner ul li span {
+  position: relative;
+  display: inline-block;
+}
+
+#banner ul li span::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-left: 1.5vmin solid #ffa000;
+  animation: typing 5s steps(12) infinite, blink-caret 0.5s step-end infinite;
+  background-color: #3A1078;
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffa000;
+  }
+}
+
+@keyframes typing {
+  40%, 60% {
+    margin-left: 10px;
+    left: 101%;
+  }
+  100% {
+    margin-left: 0px;
+    left: 0%;
+  }
+}
+
+#banner button {
+  letter-spacing: 2px;
+  margin-right: 1.2rem;
+}
+
+#banner .hire {
+  background-color: #D73461;
+  border-color: #D73461;
+}
+
+#banner .info {
+  background-color: #ffa000;
+  border-color: #ffa000;
+}
+
+/*# sourceMappingURL=banner.module.css.map */

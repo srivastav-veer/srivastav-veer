@@ -1,26 +1,19 @@
+/**
+color pallets
+  3A1078
+  4E31AA
+  2F58CD
+  3795BD
+*/
+
 @font-face {
-  font-family: PT-Serif;
-  src: url('fonts/font1.ttf');
+  font-family: Guaraldo;
+  src: url('fonts/guaraldo.ttf');
 }
 
 @font-face {
-  font-family: Montserrat;
-  src: url('fonts/Montserrat/Montserrat-Medium.ttf');
-}
-
-@font-face {
-  font-family: MontserratLight;
-  src: url('fonts/Montserrat/Montserrat-Light.ttf');
-}
-
-@font-face {
-  font-family: MontserratExtraLight;
-  src: url('fonts/Montserrat/Montserrat-ExtraLight.ttf');
-}
-
-@font-face {
-  font-family: MontserratBold;
-  src: url('fonts/Montserrat/Montserrat-Bold.ttf');
+  font-family: LeagueSpartan;
+  src: url('fonts/league-spartan.otf');
 }
 
 #__next {
@@ -43,6 +36,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background: #F9F8FF !important;
 }
 
 a {
@@ -57,8 +51,11 @@ a {
 
 .flex-col { flex-direction: column !important;}
 
-.PtSerif {
-  font-family: PT-Serif;
-}
-
 main {position: relative;}
+
+break{
+  flex-basis: 100%;
+  width: 0px; 
+  height: 0px; 
+  overflow: hidden;
+}

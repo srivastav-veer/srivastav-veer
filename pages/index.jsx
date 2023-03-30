@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Banner from '../page-components/banner';
 
 export default function Home() {
 
@@ -17,8 +18,7 @@ export default function Home() {
 								asdas
 							</div>
 							<div className='col-sm-12 col-md-8'>
-								<h3>I am</h3>
-								<h4>a Developer</h4>
+								<Banner />
 							</div>
 						</div>
 					</div>
