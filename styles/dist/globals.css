@@ -1,38 +1,40 @@
 @font-face {
   font-family: PT-Serif;
-  src: url('fonts/font1.ttf');
+  src: url("fonts/font1.ttf");
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url('fonts/Montserrat/Montserrat-Medium.ttf');
+  src: url("fonts/Montserrat/Montserrat-Medium.ttf");
 }
 
 @font-face {
   font-family: MontserratLight;
-  src: url('fonts/Montserrat/Montserrat-Light.ttf');
+  src: url("fonts/Montserrat/Montserrat-Light.ttf");
 }
 
 @font-face {
   font-family: MontserratExtraLight;
-  src: url('fonts/Montserrat/Montserrat-ExtraLight.ttf');
+  src: url("fonts/Montserrat/Montserrat-ExtraLight.ttf");
 }
 
 @font-face {
   font-family: MontserratBold;
-  src: url('fonts/Montserrat/Montserrat-Bold.ttf');
+  src: url("fonts/Montserrat/Montserrat-Bold.ttf");
 }
 
 #__next {
   overflow-x: hidden;
+}
 
-  @media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) {
+  #__next {
     overflow: auto;
   }
 }
 
 nav, nav *, nav * * {
-    font-family: Montserrat;
+  font-family: Montserrat;
 }
 
 .relative {
@@ -50,15 +52,20 @@ a {
   text-decoration: none;
 }
 
-*,*:after,*:before{
+*, *:after, *:before {
   box-sizing: border-box;
-  //transform-style: preserve-3d;
 }
 
-.flex-col { flex-direction: column !important;}
+.flex-col {
+  flex-direction: column !important;
+}
 
 .PtSerif {
   font-family: PT-Serif;
 }
 
-main {position: relative;}
+main {
+  position: relative;
+}
+
+/*# sourceMappingURL=globals.css.map */
