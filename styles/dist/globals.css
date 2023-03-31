@@ -57,6 +57,11 @@ main {
   position: relative;
 }
 
+.container {
+  max-width: none !important;
+  width: 100%;
+}
+
 break {
   flex-basis: 100%;
   width: 0px;

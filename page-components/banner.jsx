@@ -4,7 +4,7 @@ import styles from '../styles/banner.module.scss';
 export default function Banner() {
 
   	return (
-		<>
+		<div className='container-flex'>
             <div className='row' id={styles.banner}>
                 <div className='col-12'>
                     <div className={styles.wrapper}>
@@ -26,6 +26,6 @@ export default function Banner() {
                     </div>
                 </div>
             </div>
-		</>
+		</div>
   	)
 }

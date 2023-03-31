@@ -1,0 +1,1 @@
+{"version":3,"sources":["side-profile.module.scss"],"names":[],"mappings":"AAAA,aACE,OAAQ,MACR,iBAAkB,QAClB,MAAO,QACP,SAAU","file":"side-profile.module.min.css","sourcesContent":["#sideProfile {\n    height: 100vh;\n    background-color: #DFF4FF;\n    width: inherit;\n    position: fixed;\n}"]}

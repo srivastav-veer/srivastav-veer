@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Banner from '../page-components/banner';
+import SideProfile from '../page-components/side-profile';
 
 export default function Home() {
 
@@ -12,13 +13,16 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 			</Head>
 			<main>
-					<div className='container-flex'>
+					<div className='container'>
 						<div className='row'>
-							<div className='col-sm-12 col-md-4'>
-								asdas
+							<div className='col-sm-12 col-md-4 col-lg-3 d-none d-md-block'>
+								<SideProfile />
 							</div>
-							<div className='col-sm-12 col-md-8'>
+							<div className='col-sm-12 col-md-8 col-lg-9'>
 								<Banner />
+								<div>
+									<h1>I am Great...</h1>
+								</div>
 							</div>
 						</div>
 					</div>

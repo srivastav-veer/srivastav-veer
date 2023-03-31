@@ -2,7 +2,6 @@
 
     height: 100vh;
     background: #3A1078;
-    overflow: hidden;
     padding-left: 15px;
     padding-right: 15px;
 
@@ -21,7 +20,7 @@
         }
     }
 
-    .wrapper { display: inline-flex; flex-direction: column; }
+    // .wrapper { display: inline-flex; flex-direction: column; }
 
     .hello {
         font-size: 36px;

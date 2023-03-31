@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["side-profile.module.scss"],"sourcesContent":["#sideProfile {\n    height: 100vh;\n    background-color: #DFF4FF;\n    width: inherit;\n    position: fixed;\n}"],"file":"side-profile.module.css"}

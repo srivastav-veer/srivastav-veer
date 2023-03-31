@@ -1,7 +1,6 @@
 #banner {
   height: 100vh;
   background: #3A1078;
-  overflow: hidden;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -23,11 +22,6 @@
   #banner > div {
     justify-content: center;
   }
-}
-
-#banner .wrapper {
-  display: inline-flex;
-  flex-direction: column;
 }
 
 #banner .hello {
