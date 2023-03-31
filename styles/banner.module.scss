@@ -3,50 +3,86 @@
     height: 100vh;
     background: #3A1078;
     overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     &>div {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: initial;
+
+        @media screen and (min-width: 576px) {
+            justify-content: center;
+        }
     }
 
     .wrapper { display: inline-flex; flex-direction: column; }
 
     .hello {
-        font-size: 50px;
+        font-size: 36px;
         font-family: LeagueSpartan;
         color: #3A1078;
         margin-bottom: 0;
-        line-height: 60px;
+        line-height: 42px;
         margin-right: 20px;
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: #fff;
+
+        @media screen and (min-width: 450px) {
+            font-size: 50px;
+            line-height: 60px;
+        }
     }
 
     .name {
         font-family: Guaraldo;
         color: #ffffff;
-        font-size: 82px;
+        font-size: 48px;
+
+        @media screen and (min-width: 450px) {
+            font-size: 82px;
+        }
     }
 
     ul {
         list-style: none; 
-        padding-left: 0;
-        height: 90px;
-        line-height: 90px;
         overflow: hidden;
-        margin-top: -25px;
+        padding-left: 0;
+        height: 70px;
+        line-height: 70px;
+        margin-top: -15px;
+
+        @media screen and (min-width: 450px) {
+            height: 90px;
+            line-height: 90px;
+            margin-top: -25px;
+        }
 
         li { 
-            font-size: 64px;
+            font-size: 44px;
             color: #ffa000;
             // font-family: Guaraldo;
             font-family: LeagueSpartan;
             position: relative;
             top: 0;
             animation: slide 25s steps(5) infinite;
+
+            @media screen and (min-width: 450px) {
+                font-size: 64px;
+                animation: slideLg 25s steps(5) infinite;
+            }
             
             @keyframes slide {
+                100% {
+                    top: -350px
+                }
+            }
+            @keyframes slideLg {
                 100% {
                     top: -450px
                 }
