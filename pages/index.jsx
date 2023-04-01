@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import Banner from '../page-components/banner';
 import SideProfile from '../page-components/side-profile';
+import Diary from '../page-components/diary';
+import Profile from '../page-components/profile';
+import Contact from '../page-components/contact';
 import { Button } from 'react-bootstrap';
 import {useState} from 'react';
 
 export default function Home() {
-
-	// color: #FDF7FF !important;
-	// border: 2px solid #FDF7FF !important;
 
 	const [btnColorClass, setBtnColorClass] = useState('btnLight');
 	const [closeState, setCloseState] = useState(1);
@@ -47,9 +47,6 @@ export default function Home() {
 							</div>
 							<div className='col-sm-12 col-md-8 col-lg-9'>
 								<Banner />
-								{/* <div>
-									<h1>I am Great...</h1>
-								</div> */}
 							</div>
 						</div>
 					</div>
