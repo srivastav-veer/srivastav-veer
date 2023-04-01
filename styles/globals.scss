@@ -117,6 +117,19 @@ break{
 	}
 }
 
+.scroll-container {
+	position: relative;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+
+	.page {
+		min-height: 100vh;
+		scroll-snap-align: start;
+	}
+}
+
 footer {
     position: absolute;
     width: 100%;
