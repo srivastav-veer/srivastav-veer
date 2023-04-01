@@ -3,35 +3,19 @@ import styles from '../styles/side-profile.module.scss';
 
 export default function SideProfile() {
 
-	const gotoHome = () => {
-
-	}
-
-	const gotoProfile = () => {
-
-	}
-	
-	const gotoDiary = () => {
-
-	}
-	
-	const gotoContact = () => {
-
-	}
-
   	return (
 		<>
             <div className='row' id={styles.sideProfile}>
                 <div className='col-12'>
 					<div id={styles.frame}>
 						<img className={styles.profilePic} src="./images/veer_shrivastav.jpg" />
-						<h3 className={styles.name}><a onClick={gotoHome}>Veer Shrivastav</a></h3>
+						<h3 className={styles.name}><a href="#home">Veer Shrivastav</a></h3>
 					</div>
 					<div className={styles.links}>
 						<ul>
-							<li><a onClick={gotoProfile}>My Profile</a></li>
-							<li><a onClick={gotoDiary}>My Diary</a></li>
-							<li><a onClick={gotoContact}>Contact Me!</a></li>
+							<li><a href="#profile">My Profile</a></li>
+							<li><a href="#diary">My Diary</a></li>
+							<li><a href="#contact">Contact Me!</a></li>
 						</ul>
 					</div>
 					<footer>

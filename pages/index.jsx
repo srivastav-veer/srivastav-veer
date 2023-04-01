@@ -45,8 +45,11 @@ export default function Home() {
 							<div className={`col-sm-12 col-md-4 col-lg-3 ${menuClass}`} style={{'--close': closeState}}>
 								<SideProfile />
 							</div>
-							<div className='col-sm-12 col-md-8 col-lg-9'>
+							<div className='col-sm-12 col-md-8 col-lg-9 scroll-container'>
 								<Banner />
+								<Profile />
+								<Diary />
+								<Contact />
 							</div>
 						</div>
 					</div>
