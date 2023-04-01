@@ -40,22 +40,12 @@ export default function Conways() {
 
     useEffect(() => {
         if (start) {
-            const timeout = setTimeout(() => {nextCycle()}, 100);
-            
+            const timeout = setTimeout(() => {nextCycle()}, 200);
             return () => {
                 clearTimeout(timeout);
             }
         }
-    }, [start]);
-
-    useEffect(() => {
-        if (start) {
-            const timeout = setTimeout(() => {nextCycle()}, 100);
-            return () => {
-                clearTimeout(timeout);
-            }
-        }
-    }, [cells, board]);
+    }, [cells, board, start]);
 
     const calculateSize = () => {
         //Calculate the vMin
@@ -74,7 +64,6 @@ export default function Conways() {
 
     const buildBoard = (hCells, vCells) => {
         let board = [];
-        console.log(hCells, vCells);
         for (let i=0; i < vCells; i++) {
             board[i] = [];
             for (let j=0; j<hCells; j++) {
@@ -102,7 +91,6 @@ export default function Conways() {
 
     const nextCycle = () => {
         let cells = [];
-        console.log('.....', board.length, board[0].length);
         for (let j=0; j<board.length; j++) {
             for (let i=0; i<board[j].length; i++) {
                 let count = countLiveCells(j,i);
