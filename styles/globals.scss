@@ -15,6 +15,14 @@ color pallets
   font-family: LeagueSpartan;
   src: url('fonts/league-spartan.otf');
 }
+@font-face {
+  font-family: Callista;
+  src: url('fonts/callista.ttf');
+}
+@font-face {
+  font-family: Laura;
+  src: url('fonts/laura.ttf');
+}
 
 #__next {
   overflow-x: hidden;
@@ -60,4 +68,48 @@ break{
   width: 0px; 
   height: 0px; 
   overflow: hidden;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    bottom: 0;
+    padding-bottom: calc(var(--bs-gutter-x) * 0.5);
+	flex-direction: column;
+
+    ul {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+		width: 100%;
+		padding-left: 1rem;
+		padding-right: 1rem;
+
+        li {
+			float: left;
+			margin-left: 1rem;
+			margin-right: 1rem;
+
+			img {
+				width: 32px;
+				height: 32px;
+			}
+        }
+    }
+
+	.copyright {
+		font-size: 1rem;
+		font-family: LeagueSpartan;
+	}
+
+	.copyright-name {
+		font-size: .8rem;
+		font-family: LeagueSpartan;
+	}
 }

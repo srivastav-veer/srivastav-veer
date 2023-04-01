@@ -8,7 +8,7 @@ export default function Banner() {
     const [subIndex, setSubIndex] = useState(0);
     const [index, setIndex] = useState(0); //index of char of word
     const [reverse, setReverse] = useState(false);
-    const definition = ['Entrepreneur', 'Technologist'];// 'Developer', 'Explorer', 'Learner', 'Blogger'];
+    const definition = ['Entrepreneur', 'Technologist', 'Developer', 'Explorer', 'Learner', 'Blogger'];
 
     useEffect(() => {
         if (subIndex === definition[index].length + 1 && !reverse) {
@@ -24,11 +24,11 @@ export default function Banner() {
             return;
         }
         
-        const timeout = setTimeout(() => {
+        const indextimeout = setTimeout(() => {
             setSubIndex((prev) => prev + (reverse ? -1 : 1));
         }, 200);
          
-        return () => clearTimeout(timeout);
+        return () => clearTimeout(indextimeout);
     }, [subIndex, index, reverse]);
 
   	return (

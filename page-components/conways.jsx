@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import {randomInteger} from '../lib/random';
 
 function Cells ({x,y}) {
-    const CELL_SIZE = 1;
+    const CELL_SIZE = 2;
 
     return (
         <div className={styles.cell} style={{  
@@ -18,7 +18,7 @@ function Cells ({x,y}) {
 
 export default function Conways() {
     
-    const CELL_SIZE = 1;
+    const CELL_SIZE = 2;
     const boardRef = useRef();
     const [vmin, setVmin] = useState(0);
     const [board, setBoard] = useState([]);
@@ -37,7 +37,7 @@ export default function Conways() {
 
     useEffect(() => {
         if (start) {
-            const timeout = setTimeout(nextCycle, 200);
+            setTimeout(nextCycle, 200);
         }
     }, [cells, board, start]);
 
