@@ -32,18 +32,12 @@ export default function Conways() {
         let {cells, board} = randomDots(buildBoard(hCells, vCells), hCells, vCells);
         setCells(cells);
         setBoard(board);
-
-        return () => {
-            setStart(true);
-        }
+        setStart(true);
     },[]);
 
     useEffect(() => {
         if (start) {
-            const timeout = setTimeout(() => {nextCycle()}, 200);
-            return () => {
-                clearTimeout(timeout);
-            }
+            const timeout = setTimeout(nextCycle, 200);
         }
     }, [cells, board, start]);
 
