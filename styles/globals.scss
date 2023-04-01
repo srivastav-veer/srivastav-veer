@@ -70,6 +70,53 @@ break{
   overflow: hidden;
 }
 
+.menuBtn {
+    position: absolute;
+	z-index: 9999;
+	background: transparent !important;
+	box-shadow: 0;
+	border-radius: 5px;
+	font-size: 2rem;
+	margin-top: 1rem;
+	font-size: 1rem;
+
+	&.btnDark {
+		border: 2px solid #3A1078 !important;
+		color: #3A1078 !important;
+	}
+
+	&.btnLight {
+		border: 2px solid #FDF7FF !important;
+		color: #FDF7FF !important;
+	}
+}
+
+.sideMenu {
+	position: absolute;
+	z-index: 999;
+	right: 100%;
+	transition: right 0.25s linear;
+
+	@media screen and (min-width: 768px) {
+		display: block;
+		position: relative;
+		right: initial;
+	}
+}
+
+.sideMenuOut {
+	position: absolute;
+	z-index: 999;
+	right: 0%;
+	transition: right 0.25s linear;
+
+	@media screen and (min-width: 768px) {
+		display: block;
+		position: relative;
+		right: initial;
+	}
+}
+
 footer {
     position: absolute;
     width: 100%;
@@ -86,15 +133,13 @@ footer {
 		padding: 0;
 		display: flex;
 		align-items: stretch;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		width: 100%;
 		padding-left: 1rem;
 		padding-right: 1rem;
 
         li {
 			float: left;
-			margin-left: 1rem;
-			margin-right: 1rem;
 
 			img {
 				width: 32px;
