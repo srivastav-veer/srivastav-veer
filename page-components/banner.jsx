@@ -31,8 +31,16 @@ export default function Banner() {
         return () => clearTimeout(indextimeout);
     }, [subIndex, index, reverse]);
 
+    const gotoProfile = () => {
+        window.location.hash = '#profile';
+    }
+
+    const gotoContact = () => {
+        window.location.hash = '#contact';
+    }
+
   	return (
-		<div className='container-flex relative'>
+		<div className='container-flex relative page' id="home">
             <div className='row' id={styles.banner}>
                 <div className='col-12'>
                     <Conways />
@@ -40,18 +48,9 @@ export default function Banner() {
                         <h1 className={styles.hello}>Hi There! I'm</h1>
                         <h1 className={styles.intro}><span className={styles.name}>Veer Shrivastav,</span></h1>
                         <h3 className={styles.definition}><span>{`${definition[index].substring(0, subIndex)}`}</span></h3>
-                        {/* <div className='d-flex'>
-                            <ul>
-                                <li><span>Entrepreneur</span></li>
-                                <li><span>Technologist</span></li>
-                                <li><span>Developer</span></li>
-                                <li><span>Learner</span></li>
-                                <li><span>Explorer</span></li>
-                            </ul>
-                        </div> */}
                         <div className='d-flex'>
-                            <Button className={styles.hire} variant='danger' size='lg'>Hire Me!</Button>
-                            <Button className={styles.info} variant='warning' size='lg'>My Profile</Button>
+                            <Button className={styles.hire} variant='danger' size='lg' onClick={gotoContact}>Hire Me!</Button>
+                            <Button className={styles.info} variant='warning' size='lg' onClick={gotoProfile}>My Profile</Button>
                         </div>
                     </div>
                 </div>
