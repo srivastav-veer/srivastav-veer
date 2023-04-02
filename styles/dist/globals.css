@@ -25,6 +25,16 @@ color pallets
   src: url("fonts/laura.ttf");
 }
 
+@font-face {
+  font-family: Montserrat;
+  src: url("fonts/montserrat.ttf");
+}
+
+@font-face {
+  font-family: Wingdings;
+  src: url("fonts/wingdings.ttf");
+}
+
 #__next {
   overflow-x: hidden;
 }
@@ -53,6 +63,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button {
+  letter-spacing: 2px;
 }
 
 *, *:after, *:before {
@@ -145,6 +159,37 @@ break {
 .scroll-container .page {
   min-height: 100vh;
   scroll-snap-align: start;
+}
+
+.scroll-container .page .title {
+  letter-spacing: 2px;
+  font-family: LeagueSpartan;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.scroll-container .page .subtitle {
+  letter-spacing: 2px;
+  font-family: LeagueSpartan;
+  margin-bottom: .5rem;
+}
+
+.scroll-container .page span.code {
+  font-family: monospace;
+  color: #fff;
+  border-color: #990073;
+  background-color: #990073;
+  display: inline-block;
+  padding: 0.2em 0.6em 0.35em 0.6em;
+  margin: 2px 2px 2px 2px;
+  line-height: 1rem;
+  white-space: nowrap;
+  text-decoration: none;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  font-size: 12px;
 }
 
 footer {
