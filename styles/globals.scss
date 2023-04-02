@@ -83,11 +83,15 @@ break{
 	&.btnDark {
 		border: 2px solid #3A1078 !important;
 		color: #3A1078 !important;
+		transition: border 1s ease-out;
+		transition: color 1s ease-out;
 	}
 
 	&.btnLight {
 		border: 2px solid #FDF7FF !important;
 		color: #FDF7FF !important;
+		transition: border 1s ease-out;
+		transition: color 1s ease-out;
 	}
 }
 
