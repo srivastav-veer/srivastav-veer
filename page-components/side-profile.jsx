@@ -1,7 +1,7 @@
 import { Button } from 'react-bootstrap';
 import styles from '../styles/side-profile.module.scss';
 
-export default function SideProfile() {
+export default function SideProfile({onSelect}) {
 
   	return (
 		<>
@@ -9,34 +9,34 @@ export default function SideProfile() {
                 <div className='col-12'>
 					<div id={styles.frame}>
 						<img className={styles.profilePic} src="./images/veer_shrivastav.jpg" />
-						<h3 className={styles.name}><a href="#home">Veer Shrivastav</a></h3>
+						<h3 className={styles.name}><a href="#home" onClick={onSelect}>Veer Shrivastav</a></h3>
 					</div>
 					<div className={styles.links}>
 						<ul>
-							<li><a href="#profile">My Profile</a></li>
-							<li><a href="#diary">My Diary</a></li>
-							<li><a href="#contact">Contact Me!</a></li>
+							<li><a href="#profile" onClick={onSelect}>My Profile</a></li>
+							<li><a href="#diary" onClick={onSelect}>My Diary</a></li>
+							<li><a href="#contact" onClick={onSelect}>Contact Me!</a></li>
 						</ul>
 					</div>
 					<footer>
 						<ul>
 							<li>
-								<a href='https://www.linkedin.com/in/veer-shrivastav/' target='_blank'>
+								<a href='https://www.linkedin.com/in/veer-shrivastav/' target='_blank' onClick={onSelect}>
 									<img className={styles.social} src='./images/linkedin.png' alt='LinkedIn' />
 								</a>
 							</li>
 							<li>
-								<a href='https://dev.to/srivastavveer' target='_blank'>
+								<a href='https://dev.to/srivastavveer' target='_blank' onClick={onSelect}>
 									<img className={styles.social} src='./images/devto.png' alt='Dev.To' />
 								</a>
 							</li>
 							<li>
-								<a href='https://github.com/srivastav-veer' target='_blank'>
+								<a href='https://github.com/srivastav-veer' target='_blank' onClick={onSelect}>
 									<img className={styles.social} src='./images/github.png' alt='GitHub' />
 								</a>
 							</li>
 							<li>
-								<a href='https://stackoverflow.com/users/1393856/veer-shrivastav' target='_blank'>
+								<a href='https://stackoverflow.com/users/1393856/veer-shrivastav' target='_blank' onClick={onSelect}>
 									<img className={styles.social} src='./images/stackoverflow.png' alt='StackOverflow' />
 								</a>
 							</li>

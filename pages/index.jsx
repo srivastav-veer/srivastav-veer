@@ -5,9 +5,11 @@ import Diary from '../page-components/diary';
 import Profile from '../page-components/profile';
 import Contact from '../page-components/contact';
 import { Button } from 'react-bootstrap';
-import {useState} from 'react';
+import {useRef, useState, useEffect} from 'react';
 
 export default function Home() {
+
+	const scrollContainerRef = useRef();
 
 	const [btnColorClass, setBtnColorClass] = useState('btnLight');
 	const [closeState, setCloseState] = useState(1);
@@ -18,15 +20,34 @@ export default function Home() {
 		let newState = closeState==1 ? 0 : 1;
 		let newClass = newState==1 ? 'sideMenu' : 'sideMenuOut';
 		if (newState) {
-			setBtnColorClass('btnLight');
+			if (scrollContainerRef.current.scrollTop < 400) { setBtnColorClass('btnLight'); }
 			setBtnIcon('bi-grid-fill');
 		} else {
-			setBtnColorClass('btnDark');
+			if (scrollContainerRef.current.scrollTop < 400) { setBtnColorClass('btnDark'); }
 			setBtnIcon('bi-x');
 		}
 		setCloseState(newState);
 		setMenuClass(newClass);
 	}
+
+	useEffect(() => {
+		if (scrollContainerRef && scrollContainerRef.current) {
+			scrollContainerRef.current.addEventListener('scroll', onScroll, false);
+
+			return () => {
+				scrollContainerRef.current.removeEventListener('scroll', onScroll, false);
+			}
+		}
+	}, []);
+
+	const onScroll= () => {
+		if (scrollContainerRef.current.scrollTop > 400) {
+			setBtnColorClass('btnDark');
+		} else {
+			setBtnColorClass('btnLight');
+		}
+	}
+	
 
   	return (
 		<>
@@ -43,9 +64,9 @@ export default function Home() {
 						</Button>
 						<div className='row'>
 							<div className={`col-sm-12 col-md-4 col-lg-3 ${menuClass}`} style={{'--close': closeState}}>
-								<SideProfile />
+								<SideProfile onSelect={toggleMenu}/>
 							</div>
-							<div className='col-sm-12 col-md-8 col-lg-9 scroll-container'>
+							<div className='col-sm-12 col-md-8 col-lg-9 scroll-container' ref={scrollContainerRef}>
 								<Banner />
 								<Profile />
 								<Diary />
