@@ -30,6 +30,7 @@
             font-family: Laura;
             font-size: 150%;
             color: #4E31AA;
+            letter-spacing: 2px;
             &::before {
                 display: inline-flex;
                 flex-direction: row;
@@ -88,23 +89,35 @@
             .widthsm50 {
                 width: 100%;
                 flex-direction: column;
+                &:nth-child(1) {
+                    display: none !important;
+                }
                 @media screen and (min-width: 992px) {
                     width: 50%;
+                    &:nth-child(1) {
+                        display: initial !important;
+                    }
                 }
             }
 
             ul {
                 list-style: none;
                 padding: 0;
-                line-height: 30px;
                 li {
+                    display: flex;
+                    align-items: center;
                     padding-bottom: 0.4rem;
+                    font-family: Montserrat;
+                    letter-spacing: 2px;
                     &::before {
                         content: "R"; /* FontAwesome Unicode */
                         font-family: Wingdings;
                         font-size: 22px;
-                        display: inline-block;
+                        display: inline-flex;
                         margin-right: .6rem;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 3px;
                     }
                 }
             }

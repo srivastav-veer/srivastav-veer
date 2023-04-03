@@ -37,8 +37,6 @@ export default function Profile() {
                                     <li>Lorem Lorem Lorem Lorem</li>
                                     <li>Lorem Lorem Lorem Lorem</li>
                                     <li>Lorem Lorem Lorem Lorem</li>
-                                    <li>Lorem Lorem Lorem Lorem</li>
-                                    <li>Lorem Lorem Lorem Lorem</li>
                                 </ul>  
                             </div>
                         </div>
