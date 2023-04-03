@@ -7,13 +7,13 @@ export default function Experience ({data}) {
             <h2 className={styles.organization}><a href={data.organization.url} target='_new'>{data.organization.name}</a></h2>
             <h3 className={styles.position}>{data.position}</h3>
             <div className={styles.skillset}>
-                {data.skills.map((skill) => {
-                    return (<span className='code'>{skill}</span>)
+                {data.skills.map((skill, key) => {
+                    return (<span key={key} className='code'>{skill}</span>)
                 })}
             </div>
             <div className={`d-flex ${styles.widthsm50Container}`}>
                 {'desciption' in data && 
-                    <div className={`d-flex ${styles.widthsm50}`}>
+                    <div className={`d-flex ${('pointerHeader' in data) ? styles.widthsm50 : ''}`}>
                         <h6 className={`subtitle`}>Description</h6>
                         <p className={styles.description}>
                             {data.desciption}
@@ -24,8 +24,8 @@ export default function Experience ({data}) {
                     <div className={`d-flex ${styles.widthsm50}`}>
                         <h6 className={`subtitle`}>{data.pointerHeader}</h6>
                         <ul>
-                            {data.pointers.map((responsibillity) => {
-                                return (<li className='code'>{responsibillity}</li>)
+                            {data.pointers.map((responsibillity, key) => {
+                                return (<li key={key} className='code'>{responsibillity}</li>)
                             })}
                         </ul>  
                     </div>
