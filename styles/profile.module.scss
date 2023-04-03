@@ -1,6 +1,6 @@
 #profile {
     padding-top: 2rem;
-    padding-bottom: 40vh;
+    padding-bottom: 70vh;
     @media screen and (min-width: 768px) {
 		padding-top: 1rem;
         padding-right: calc(var(--bs-gutter-x) * 0.5);
@@ -21,7 +21,7 @@
         margin-left: 1rem;
 
         &:nth-of-type(n + 2) {
-            margin-top: 1rem;
+            margin-top: 2.2rem;
         }
 
         .startTime, .endTime {
@@ -106,7 +106,7 @@
                 li {
                     display: flex;
                     align-items: center;
-                    padding-bottom: 0.4rem;
+                    padding-bottom: 1rem;
                     font-family: Montserrat;
                     letter-spacing: 2px;
                     &::before {
