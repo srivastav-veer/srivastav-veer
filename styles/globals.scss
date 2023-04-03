@@ -73,6 +73,41 @@ button {
 
 main {position: relative;}
 
+.flex-sm-column-xlg-row {
+	flex-direction: column;
+	@media screen and (min-width: 992px) {
+		flex-direction: row;
+	}
+
+	div.d-flex:nth-of-type(n+2) {
+		padding-left: 0;
+		@media screen and (min-width: 992px) {
+			padding-left: 2rem;
+		}
+	}
+}
+
+.flex-sm-row-xlg-column {
+	flex-direction: row;
+	@media screen and (min-width: 992px) {
+		flex-direction: column;
+	}
+}
+
+.w-sm-100-xlg-50 {
+	width: 100%;
+	@media screen and (min-width: 992px) {
+		width: 50%;
+	}
+}
+
+.text {
+	font-family: Montserrat;
+	font-weight: 100;
+	margin-bottom: 1rem;
+	letter-spacing: 2px;
+}
+
 .container {max-width: none !important; width: 100%; }
 
 break{
