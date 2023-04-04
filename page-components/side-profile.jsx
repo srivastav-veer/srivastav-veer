@@ -13,7 +13,7 @@ export default function SideProfile({onSelect}) {
 					</div>
 					<div className={styles.links}>
 						<ul>
-							<li><a href="#diary" onClick={onSelect}>My Diary</a></li>
+							{/* <li><a href="#diary" onClick={onSelect}>My Diary</a></li> */}
 							<li><a href="#profile" onClick={onSelect}>My Profile</a></li>
 							<li><a href="#contact" onClick={onSelect}>Contact Me!</a></li>
 						</ul>
