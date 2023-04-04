@@ -15,6 +15,7 @@ export default function Home() {
 	const [closeState, setCloseState] = useState(1);
 	const [menuClass, setMenuClass] = useState('sideMenu');
 	const [btnIcon, setBtnIcon] = useState('bi-grid-fill');
+	const [showClue, setShowClue] = useState(false);
 
 	const toggleMenu = () => {
 		let newState = closeState==1 ? 0 : 1;
@@ -41,10 +42,18 @@ export default function Home() {
 	}, []);
 
 	const onScroll= () => {
-		if (scrollContainerRef.current.scrollTop > 400) {
+		let _100vh = window.innerHeight;
+		console.log('100vh', _100vh);
+		if (scrollContainerRef.current.scrollTop > 400 && scrollContainerRef.current.scrollTop < (_100vh*4.5)) {
 			setBtnColorClass('btnDark');
+			console.clear();
+			setShowClue(false);
 		} else {
 			setBtnColorClass('btnLight');
+		}
+
+		if (scrollContainerRef.current.scrollTop > (_100vh*4.5)) {
+			setShowClue(true);
 		}
 	}
 	
@@ -70,7 +79,7 @@ export default function Home() {
 								<Banner />
 								<Diary />
 								<Profile />
-								<Contact />
+								<Contact show={showClue} />
 							</div>
 						</div>
 					</div>

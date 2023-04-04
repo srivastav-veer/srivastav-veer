@@ -22,11 +22,8 @@ export default function Profile() {
         }
 
         for (let i=_1stcol ; i<keySkills.length; i++) {
-            console.log('....' ,i, keySkills[i]);
             _2ndskills.push(<KeySkill key={`${keySkills[i].name}_${keySkills[i].points}`} data={keySkills[i]} />);
         }
-
-        console.log(_2ndskills);
 
         return (
             <div className='d-flex flex-sm-column-xlg-row mb-4'>
@@ -58,20 +55,3 @@ export default function Profile() {
 		</div>
   	)
 }
-
-/* <div className='d-flex w-sm-100-xlg-50 flex-column'>
-                            <h1 className='title'>About</h1>
-                            <h5 className='text'>
-                                With 10+ years of experience in
-                                software product development, I
-                                have built and managed software
-                                products and engineering teams.
-                            </h5>
-                            <h5 className='text mb-4'>
-                                My core skills lies in building scalable
-                                application architecture, enhancing
-                                engineering processes, developer
-                                hiring and optimising cloud
-                                infrastructure.
-                            </h5>
-                        </div> */
