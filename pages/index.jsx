@@ -77,7 +77,7 @@ export default function Home() {
 							</div>
 							<div className='col-sm-12 col-md-8 col-lg-9 scroll-container' ref={scrollContainerRef}>
 								<Banner />
-								<Diary />
+								{/* <Diary /> */}
 								<Profile />
 								<Contact show={showClue} />
 							</div>
