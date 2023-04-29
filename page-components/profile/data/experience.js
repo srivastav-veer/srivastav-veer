@@ -68,7 +68,18 @@ export const experiences = [
         endTime: 'April 2018',
         startTime: 'April 2016',
         position: 'Sr. Software Engineer',
+        desciption: `Justdial, India's number 1 local search engine. 
+        Justdial lacked log tracking systems and was unable to track their 
+        visitors on the genre of search that one was doing. 
+        And hence being Senior Software Engineer, I developed their log visualization 
+        platform using Fluentd, MongoDB and Kibana.`,
         skills: ['Node.js', 'Fluentd', 'PHP', 'ElasticSearch'],
+        pointerHeader: 'Major Contributions:',
+        pointers: [
+            'Developed internal application library on extending Log4JS and Log4PHP for applications to log various events.',
+            'Established end-to-end logging infrastructure',
+            'Reverse Geo-Coding for addresses in Justdial database to find lat-long from string'
+        ]
     },
     {
         organization: {
@@ -78,6 +89,17 @@ export const experiences = [
         endTime: 'April 2016',
         startTime: 'July 2013',
         position: 'Software Engineer',
+        desciption: `I was on contract in the Business Catalyst Team (BCS) for Qualcomm. 
+        During my tenure at the organization I worked on various differnet internal applications of 
+        Qualcomm. Here I explored technologies like - AngularJS, JQuery, Jasmine, RequireJS,
+        Moodle(PHP), Wordpress, Bootstrap3, iScroll, MobileUIAngular, Foundation, Phonegap,
+        Android etc...`,
         skills: ['AngularJs', 'Node.js', 'PHP', 'JavaScript', 'MySQL', 'HTML', 'CSS'],
+        pointerHeader: 'Major Contributions:',
+        pointers: [
+            'Developed and led core modules for Qualcomm\'s employee learning portal.',
+            'Developed internal tools for data migration and data validations',
+            'Developed several proof of concept applications.'
+        ]
     }
 ];
