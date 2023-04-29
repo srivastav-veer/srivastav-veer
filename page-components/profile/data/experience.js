@@ -44,8 +44,8 @@ export const experiences = [
             name: 'Xwards',
             url: '#'
         },
-        endTime: 'July 2020',
-        startTime: 'September 2018',
+        endTime: 'October 2020',
+        startTime: 'May 2018',
         position: 'Co-Founder & CTO',
         skills: ['Node.js', 'Fluentd', 'MongoDB', 'MySQL', 'Neo4J', 'React-Native'],
         desciption: `Xwards was my second startup. It was an in-cab mobility advertisement company 
@@ -62,44 +62,20 @@ export const experiences = [
     },
     {
         organization: {
-            name: 'Tech Talks Certifications',
-            url: '#'
-        },
-        endTime: 'February 2019',
-        startTime: 'January 2017',
-        position: 'Founder & CEO',
-        skills: ['Node.js', 'AngularJs', 'MongoDB', 'MySQL', 'Neo4J'],
-        desciption: `Tech Talks Certification, formerly called Tech Talks India, was my first startup 
-        in 2017. It took me 6 months to do market research and come up with a viable business model 
-        and the first product. At Tech Talks we were trying to establish technology accreditation 
-        body for certification of open-source technology.`,
-    },
-    {
-        organization: {
             name: 'Justdial Labs',
             url: 'https://www.justdial.com/'
         },
-        endTime: 'January 2017',
+        endTime: 'April 2018',
         startTime: 'April 2016',
         position: 'Sr. Software Engineer',
         skills: ['Node.js', 'Fluentd', 'PHP', 'ElasticSearch'],
     },
     {
         organization: {
-            name: 'Pegasystems',
-            url: 'https://www.pega.com/'
-        },
-        endTime: 'April 2016',
-        startTime: 'April 2015',
-        position: 'Software Engineer',
-        skills: ['AngularJs', 'Node.js', 'Pega7', 'JavaScript'],
-    },
-    {
-        organization: {
             name: 'Tata Consultancy Services',
             url: 'https://www.tcs.com/'
         },
-        endTime: 'April 2015',
+        endTime: 'April 2016',
         startTime: 'July 2013',
         position: 'Software Engineer',
         skills: ['AngularJs', 'Node.js', 'PHP', 'JavaScript', 'MySQL', 'HTML', 'CSS'],
